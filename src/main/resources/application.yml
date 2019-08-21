@@ -1,0 +1,19 @@
+spring:
+  application:
+    # Custom name properties used in the app
+    name: Welcome to the Chat Room!
+  server:
+    port: 8080
+    # Custom properties used in both classes and template
+  path:
+    loginPath: login
+    chatPath: chat
+  redis:
+    timeout: 3000
+    host: localhost
+  thymeleaf:
+    enabled: true
+    cache: false
+    check-template-location: true
+    check-template: true
+    prefix: classpath:/templates/
